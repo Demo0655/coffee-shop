@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="custom-cursor"></div>
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="cup-container">
+                <div class="cup">
+                    <div class="coffee-fill"></div>
+                </div>
+            </div>
+            <p class="loader-text">Developing Visuals...</p>
+        </div>
+    </div>
+
+    <main data-scroll-container>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html"
+                    style="text-decoration: none; color: inherit;">COFFEE<span>.</span>SHOP</a></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="cta-btn secondary magnetic">Order Now</button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <!-- Static Hero Section -->
+        <section class="page-hero" style="background-image: url('/bg.png');">
+
+            <div class="hero-content">
+                <h1 class="hero-title cinematic-text" style="font-size: clamp(3rem, 6vw, 5rem);">
+                    <span>Visual</span><br>
+                    <span class="accent-text">Bliss</span> ☕
+                </h1>
+                <p class="hero-subtitle" style="color: white; margin-bottom: 0;">A glimpse into our cozy world.</p>
+            </div>
+        </section>
+
+        <section id="gallery-grid" class="gallery-section-detailed">
+            <div class="container">
+                <div class="gallery-masonry">
+                    <div class="gallery-item reveal-up"><img src="/Shop1.webp" alt="Gallery 1"></div>
+                    <div class="gallery-item reveal-up"><img src="/enterior.png" alt="Gallery 2"></div>
+                    <div class="gallery-item reveal-up"><img src="/Shop2.jpg" alt="Gallery 3"></div>
+                    <div class="gallery-item reveal-up"><img src="/interior.png" alt="Gallery 4"></div>
+                    <div class="gallery-item reveal-up"><img src="/Shop5.webp" alt="Gallery 5"></div>
+                    <div class="gallery-item reveal-up"><img src="/Shop3.webp" alt="Gallery 6"></div>
+                    <div class="gallery-item reveal-up"><img src="/Shop4.webp" alt="Gallery 7"></div>
+                    <div class="gallery-item reveal-up"><img src="/cappuccino.png" alt="Gallery 8"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Premium Footer -->
+        <footer class="premium-footer">
+            <div class="footer-huge-logo">COFFEE.SHOP</div>
+            <div class="container">
+                <div class="footer-brand reveal-up">
+                    <h3>Brewed to Perfection.</h3>
+                    <p style="color: var(--text-muted); max-width: 300px; margin-bottom: 30px; line-height: 1.8;">
+                        Experience the finest coffee in South Delhi. Premium brews, cozy atmosphere, and an
+                        unforgettable taste.
+                    </p>
+                    <div class="social-links" style="display: flex; gap: 20px;">
+                        <a href="https://www.instagram.com/coffe.shop_1/" target="_blank" aria-label="Instagram"
+                            style="color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s;"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"
+                            style="color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s;"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links reveal-up" style="transition-delay: 0.1s;">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="menu.html">The Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links reveal-up" style="transition-delay: 0.2s;">
+                    <h4>Visit Us</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 10px;">Paryavaran Complex, Saidulajab,<br>Saket,
+                        South Delhi 110030</p>
+                    <a href="contact.html" style="color: var(--accent-gold); margin-top: 15px;">Get Directions
+                        &rarr;</a>
+                </div>
+            </div>
+            <div
+                style="text-align: center; color: rgba(255,255,255,0.3); position: relative; z-index: 2; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <span>&copy; 2026 Coffee Shop. All rights reserved.</span>
+                <span>Designed by Aman Verma</span>
+            </div>
+        </footer>
+        <!-- Gallery Modal -->
+        <div id="gallery-modal" class="modal">
+            <span class="close-modal">&times;</span>
+            <div class="modal-img-container">
+                <img src="" alt="Gallery Preview" id="gallery-preview-img">
+            </div>
+        </div>
+    </main>
+
+    <!-- Reservation Modal -->
+    <div id="reservation-modal" class="modal">
+        <div class="reservation-container">
+            <span class="close-reservation">&times;</span>
+            <div class="res-left">
+                <div class="res-content">
+                    <h2>Secure Your Spot</h2>
+                    <p>Reserve a table and experience the perfect brew in our curated atmosphere.</p>
+                </div>
+            </div>
+            <div class="res-right">
+                <form id="reservation-form">
+                    <div class="res-step active" data-step="1">
+                        <h3>The Basics</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="res-name" placeholder=" " required>
+                                <label for="res-name">Full Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="res-phone" placeholder=" " required>
+                                <label for="res-phone">Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="res-date" required>
+                            <label for="res-date"
+                                style="top: -10px; font-size: 0.8rem; color: var(--accent-gold);">Date</label>
+                        </div>
+                        <div class="vibe-selector">
+                            <p>Choose Your Vibe:</p>
+                            <div class="vibe-options">
+                                <div class="vibe-opt" data-vibe="cozy">
+                                    <span class="vibe-icon">🛋️</span>
+                                    <span class="vibe-label">Cozy Corner</span>
+                                </div>
+                                <div class="vibe-opt active" data-vibe="window">
+                                    <span class="vibe-icon">🪟</span>
+                                    <span class="vibe-label">Window View</span>
+                                </div>
+                                <div class="vibe-opt" data-vibe="bar">
+                                    <span class="vibe-icon">☕</span>
+                                    <span class="vibe-label">Bar Counter</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="cta-btn primary full next-step" style="width: 100%;">Next: Select
+                            Details</button>
+                    </div>
+                    <div class="res-step" data-step="2">
+                        <h3>Refining Your Visit</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select id="res-guests" required
+                                    style="width: 100%; background: transparent; color: white; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); padding: 10px 0;">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="1" style="background: #121212;">1 Person</option>
+                                    <option value="2" style="background: #121212;">2 People</option>
+                                    <option value="4" style="background: #121212;">4 People</option>
+                                    <option value="6" style="background: #121212;">6+ People</option>
+                                </select>
+                                <label for="res-guests"
+                                    style="top: -10px; font-size: 0.8rem; color: var(--accent-gold);">Number of
+                                    Guests</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="res-time" required
+                                    style="width: 100%; background: transparent; color: white; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); padding: 10px 0;">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="08:00" style="background: #121212;">08:00 AM</option>
+                                    <option value="10:00" style="background: #121212;">10:00 AM</option>
+                                    <option value="12:00" style="background: #121212;">12:00 PM</option>
+                                    <option value="14:00" style="background: #121212;">02:00 PM</option>
+                                    <option value="16:00" style="background: #121212;">04:00 PM</option>
+                                    <option value="18:00" style="background: #121212;">06:00 PM</option>
+                                    <option value="20:00" style="background: #121212;">08:00 PM</option>
+                                </select>
+                                <label for="res-time"
+                                    style="top: -10px; font-size: 0.8rem; color: var(--accent-gold);">Preferred
+                                    Time</label>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-top: 20px;">
+                            <textarea id="res-notes" placeholder=" " style="width: 100%; min-height: 100px;"></textarea>
+                            <label for="res-notes">Special Requests (Occasion, Dietary, etc.)</label>
+                        </div>
+                        <div class="step-buttons">
+                            <button type="button" class="cta-btn secondary prev-step">Back</button>
+                            <button type="submit" class="cta-btn primary">Confirm Reservation</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#1a1008"/>
+
+  <!-- Steam wisps -->
+  <path d="M22 14 Q20 10 22 6 Q24 2 22 -1" stroke="#c8a96e" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M32 13 Q30 9 32 5 Q34 1 32 -2" stroke="#c8a96e" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M42 14 Q40 10 42 6 Q44 2 42 -1" stroke="#c8a96e" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+  <!-- Cup body -->
+  <path d="M16 24 L20 50 Q20 53 24 53 L40 53 Q44 53 44 50 L48 24 Z" fill="#6b3a2a"/>
+  <!-- Cup highlight -->
+  <path d="M18 24 L22 50 Q22 51 24 51 L26 51 Q24 48 23 28 Z" fill="#7d4535" opacity="0.5"/>
+
+  <!-- Coffee surface inside cup -->
+  <ellipse cx="32" cy="26" rx="15" ry="4" fill="#3d1f10"/>
+  <!-- Coffee surface shimmer -->
+  <ellipse cx="29" cy="25" rx="5" ry="1.5" fill="#5c3020" opacity="0.6"/>
+
+  <!-- Cup handle -->
+  <path d="M44 30 Q56 30 56 38 Q56 46 44 46" stroke="#6b3a2a" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Saucer -->
+  <ellipse cx="32" cy="54" rx="20" ry="4" fill="#4a2518"/>
+  <ellipse cx="32" cy="54" rx="16" ry="2.5" fill="#5c3020"/>
+
+  <!-- Gold rim on cup top -->
+  <ellipse cx="32" cy="24" rx="16" ry="4" fill="#c8a96e" opacity="0.9"/>
+  <ellipse cx="32" cy="24" rx="13" ry="2.5" fill="#3d1f10"/>
+
+  <!-- Latte art heart on coffee -->
+  <path d="M28 27 Q29 25 30 27 Q31 25 32 27 Q31 30 28 27Z" fill="#8b5e3c" opacity="0.8"/>
+</svg>
