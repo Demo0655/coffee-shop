@@ -2237,3 +2237,164 @@ body {
     width: 22px;
     height: 22px;
 }
+
+/* --- COMPREHENSIVE RESPONSIVE STYLES (ALL DEVICES) --- */
+
+@media (max-width: 1200px) {
+    .menu-grid-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-title {
+        font-size: clamp(3rem, 8vw, 6rem);
+    }
+}
+
+@media (max-width: 992px) {
+    .split-text {
+        padding: 60px 5%;
+    }
+    
+    .huge-cta .big-text {
+        font-size: clamp(3rem, 10vw, 8rem);
+    }
+    
+    .premium-footer {
+        padding: 60px 5% 30px;
+    }
+    
+    .footer-huge-logo {
+        font-size: clamp(2.5rem, 12vw, 8rem);
+        bottom: -10px;
+    }
+    
+    .about-block {
+        gap: 40px;
+    }
+    
+    .about-block.reverse .about-image {
+        grid-row: 2;
+    }
+    
+    .about-block.reverse .about-content {
+        grid-row: 1;
+    }
+    
+    .parallax-cup {
+        width: 300px;
+    }
+    
+    .cup-wrapper {
+        right: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        left: 5%;
+        text-align: center;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .cup-wrapper {
+        display: none; /* Hide complex parallax on mobile for better text readability */
+    }
+    
+    .page-hero {
+        min-height: 50vh;
+        padding-top: 100px;
+    }
+    
+    .timeline-section, .parallax-quote, .huge-cta {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .contact-info-boxes {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-filters {
+        padding: 10px 5%;
+    }
+    
+    .filter-btns {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .menu-item-details {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .menu-item::after {
+        display: none;
+    }
+    
+    .menu-category-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+    
+    .cta-btn {
+        padding: 12px 25px;
+        font-size: 0.8rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .timeline::after {
+        left: 21px;
+    }
+    
+    .form-group input, 
+    .form-group textarea, 
+    .form-group select {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    .res-content h2 {
+        font-size: 2rem;
+    }
+}
