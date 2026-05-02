@@ -969,7 +969,7 @@ body {
     left: 0;
     width: 100%;
     height: 120%;
-    background: url('./cafe-wide.jpg') center/cover no-repeat;
+    background: url('cafe-wide.jpg') center/cover no-repeat;
     z-index: -1;
 }
 
@@ -1574,7 +1574,7 @@ body {
 /* Highlight Section Home */
 .highlight-section {
     height: 60vh;
-    background: url('./bg.png') center/cover fixed;
+    background: url('bg.png') center/cover fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1956,7 +1956,7 @@ body {
 .parallax-quote {
     padding: 200px 10%;
     text-align: center;
-    background: url('./cafe-wide.jpg') center/cover fixed;
+    background: url('cafe-wide.jpg') center/cover fixed;
     position: relative;
 }
 
@@ -2089,7 +2089,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('./interior.png') center/cover;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('interior.png') center/cover;
 }
 
 .res-content h2 {

@@ -508,9 +508,9 @@ if (resModal && resBtns.length > 0) {
             // Change background image based on vibe (optional but cool)
             const vibe = opt.dataset.vibe;
             const resLeft = document.querySelector('.res-left');
-            if (vibe === 'cozy') resLeft.style.backgroundImage = "url('./Shop1.webp')";
-            if (vibe === 'window') resLeft.style.backgroundImage = "url('./interior.png')";
-            if (vibe === 'bar') resLeft.style.backgroundImage = "url('./latte.jpg')";
+            if (vibe === 'cozy') resLeft.style.backgroundImage = "url('Shop1.webp')";
+            if (vibe === 'window') resLeft.style.backgroundImage = "url('interior.png')";
+            if (vibe === 'bar') resLeft.style.backgroundImage = "url('latte.jpg')";
         });
     });
 
