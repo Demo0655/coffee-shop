@@ -174,39 +174,41 @@ steamSpans.forEach((span, i) => {
 
 // Cup Hover & Click Interactions
 const cupWrapper = document.querySelector('.cup-wrapper');
-cupWrapper.addEventListener('mouseenter', () => {
-    gsap.to('.steam-particles span', {
-        opacity: 0.8,
-        scale: 3,
-        duration: 0.3,
-        stagger: 0.1
+if (cupWrapper) {
+    cupWrapper.addEventListener('mouseenter', () => {
+        gsap.to('.steam-particles span', {
+            opacity: 0.8,
+            scale: 3,
+            duration: 0.3,
+            stagger: 0.1
+        });
     });
-});
 
-cupWrapper.addEventListener('mouseleave', () => {
-    gsap.to('.steam-particles span', {
-        opacity: 0.4,
-        scale: 1,
-        duration: 0.3
+    cupWrapper.addEventListener('mouseleave', () => {
+        gsap.to('.steam-particles span', {
+            opacity: 0.4,
+            scale: 1,
+            duration: 0.3
+        });
     });
-});
 
-cupWrapper.addEventListener('click', () => {
-    const ripple = document.getElementById('cup-ripple');
-    gsap.fromTo(ripple, { scale: 0, opacity: 0.6 }, {
-        scale: 15,
-        opacity: 0,
-        duration: 0.8,
-        ease: 'power2.out'
+    cupWrapper.addEventListener('click', () => {
+        const ripple = document.getElementById('cup-ripple');
+        gsap.fromTo(ripple, { scale: 0, opacity: 0.6 }, {
+            scale: 15,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power2.out'
+        });
+        
+        gsap.to('#hero-cup', {
+            scale: 0.95,
+            yoyo: true,
+            repeat: 1,
+            duration: 0.1
+        });
     });
-    
-    gsap.to('#hero-cup', {
-        scale: 0.95,
-        yoyo: true,
-        repeat: 1,
-        duration: 0.1
-    });
-});
+}
 
 // Idle Floating Animations
 gsap.to('.cup-wrapper', {
