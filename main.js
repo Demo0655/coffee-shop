@@ -78,9 +78,10 @@ const hideLoader = () => {
 
 window.addEventListener('load', hideLoader);
 
-// Safety timeout: Hide loader after 5 seconds if window.load doesn't fire
+// Safety timeout: Hide loader after 5 seconds if it's still visible
 setTimeout(() => {
-    if (document.getElementById('loader').style.transform !== 'translate(0%, -100%)') {
+    const loader = document.getElementById('loader');
+    if (loader && loader.style.display !== 'none' && !loader.classList.contains('hidden')) {
         hideLoader();
     }
 }, 5000);
@@ -507,9 +508,9 @@ if (resModal && resBtns.length > 0) {
             // Change background image based on vibe (optional but cool)
             const vibe = opt.dataset.vibe;
             const resLeft = document.querySelector('.res-left');
-            if (vibe === 'cozy') resLeft.style.backgroundImage = "url('/Shop1.webp')";
-            if (vibe === 'window') resLeft.style.backgroundImage = "url('/interior.png')";
-            if (vibe === 'bar') resLeft.style.backgroundImage = "url('/latte.jpg')";
+            if (vibe === 'cozy') resLeft.style.backgroundImage = "url('./Shop1.webp')";
+            if (vibe === 'window') resLeft.style.backgroundImage = "url('./interior.png')";
+            if (vibe === 'bar') resLeft.style.backgroundImage = "url('./latte.jpg')";
         });
     });
 
